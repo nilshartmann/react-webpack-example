@@ -6,7 +6,7 @@ Use case:
 ---------
 Present greeting cards to user :-)
 
-![Sample Application](screenshot.png)
+![Sample Application](screenshot2.png)
 
 Features shown so far:
 ----------------------
