@@ -13,6 +13,8 @@ html {
 
 body {
 	font-family: 'PT Sans', sans-serif;
+
+	margin-top: 18px;
 }
 
 .GreetingCard {
@@ -42,26 +44,10 @@ body {
 	text-align: center;
 }
 
-.NavButton {
-	font-size: 18px;
-	background-color: rgba(17, 17, 17, .7);
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	color: white;
-	padding: 10px;
-	border: 0;
-}
-
-.NavButton:hover {
-	cursor: pointer;
-	background-color: white;
-	color: rgba(17, 17, 17, .7);
-}
-
 .NavBar {
 	margin-top: 5px;
 }
 
 .NavBar > img	 {
-	padding: 4px;
+	padding: 4px 12px 4px 12px;
 }
