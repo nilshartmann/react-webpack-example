@@ -1,0 +1,27 @@
+{
+  "name": "react-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/ public/dist/",
+    "devserver": "./node_modules/.bin/webpack-dev-server --devtool source-map --progress --colors --hot --content-base public"
+  },
+  "author": "Nils Hartmann",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "babel-loader": "*",
+    "bundle-loader": "*",
+    "css-loader": "^0.15.1",
+    "file-loader": "^0.8.4",
+    "json-loader": "^0.5.2",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "*",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
