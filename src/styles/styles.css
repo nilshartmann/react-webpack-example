@@ -43,12 +43,14 @@ body {
 }
 
 .NavButton {
+	margin-top: 5px;
 	font-size: 18px;
 	background-color: rgba(17, 17, 17, .7);
 	text-transform: uppercase;
 	letter-spacing: 4px;
 	color: white;
 	padding: 10px;
+	border: 0;
 }
 
 .NavButton:hover {

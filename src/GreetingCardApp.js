@@ -21,9 +21,8 @@ export default class GreetingCardApp extends React.Component {
 	}
 
 	nextClicked() {
-		const newCardId = (this.state.cardId > this.props.cards.length-1 ? 0 : this.state.cardId + 1);
+		const newCardId = (this.state.cardId === this.props.cards.length-1 ? 0 : this.state.cardId + 1);
 		this.setState({cardId: newCardId});
-
 	}
 
 	currentCard() {
@@ -34,7 +33,7 @@ export default class GreetingCardApp extends React.Component {
 		return (
 			<div className="GreetingCard">
 				<GreetingCard card={this.currentCard()} />
-				<button onClick={this.prevClicked} className="NavButton">Previous</button><button  onClick={this.nextClicked}className="NavButton">Next</button>
+				<button onClick={this.prevClicked} className="NavButton">Previous</button><button onClick={this.nextClicked} className="NavButton">Next</button>
 			</div>
 		);
 	}
