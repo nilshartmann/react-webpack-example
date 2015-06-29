@@ -1,7 +1,7 @@
 "use strict";
 
 import React from 'react';
-import Image from './Image';
+import CardImage from './CardImage';
 
 export default class GreetingCard extends React.Component {
 	constructor(props) {
@@ -12,7 +12,7 @@ export default class GreetingCard extends React.Component {
 		return (
 			<div>
 				<h1 className="GreetingCardTitle">{this.props.card.message}</h1>
-				<Image image={this.props.card.image}/>
+				<CardImage image={this.props.card.image}/>
 			</div>
 		);
 	}

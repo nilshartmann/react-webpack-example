@@ -1,6 +1,6 @@
 html {
 	/* This image will be displayed fullscreen */
-	background: url('../images/bg.jpg') no-repeat center center fixed;
+	background: url('./bg.jpg') no-repeat center center fixed;
 
 	/* Ensure the html element always takes up the full height of the browser window */
 	min-height: 100%;
@@ -43,7 +43,6 @@ body {
 }
 
 .NavButton {
-	margin-top: 5px;
 	font-size: 18px;
 	background-color: rgba(17, 17, 17, .7);
 	text-transform: uppercase;
@@ -57,4 +56,12 @@ body {
 	cursor: pointer;
 	background-color: white;
 	color: rgba(17, 17, 17, .7);
+}
+
+.NavBar {
+	margin-top: 5px;
+}
+
+.NavBar > img	 {
+	padding: 4px;
 }

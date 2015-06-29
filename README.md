@@ -1,6 +1,5 @@
 React Webpack Example
 =====================
-
 Very simple and not yet complete example on how to use webpack and react.
 
 Use case:
@@ -12,10 +11,10 @@ Present greeting cards to user :-)
 Features shown so far:
 ----------------------
 * Require CSS files from javascript
-* Require images from Javascript
+* Require images from Javascript (large ones that are copied & small ones that are inlined. Transparent for requirer)
 * Require JSon from JavaScript
-* Use ES6 language features
-* Use react dev server with hot reloading
+* Use babel to enable JSX and ES6 language features
+* Use react dev server with react hot loader to reload react components without loosing the state
 
 Run:
 ----

@@ -2,6 +2,9 @@
 
 import React from 'react';
 import GreetingCard from './GreetingCard';
+import NavBar from './NavBar';
+
+
 
 export default class GreetingCardApp extends React.Component {
 	constructor(props) {
@@ -33,7 +36,7 @@ export default class GreetingCardApp extends React.Component {
 		return (
 			<div className="GreetingCard">
 				<GreetingCard card={this.currentCard()} />
-				<button onClick={this.prevClicked} className="NavButton">Previous</button><button onClick={this.nextClicked} className="NavButton">Next</button>
+				<NavBar onPrev={this.prevClicked} onNext={this.nextClicked} />
 			</div>
 		);
 	}

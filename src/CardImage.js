@@ -6,7 +6,7 @@ const IMAGES = {
 	sunset: require('./images/sunset.jpg')
 };
 
-export default class Image extends React.Component {
+export default class CardImage extends React.Component {
 	constructor(props) {
 		super(props);
 	}
