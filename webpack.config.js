@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
 	resolve: {
@@ -15,12 +16,16 @@ module.exports = {
 	},
 	module: {
 		loaders: [
+			{	test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel']},
 			{ test: /\.css$/, loader: 'style-loader!css-loader' },
-			{	test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
 			{	test: /\.(png|jpg)$/,	loader: 'url?limit=25000'	},
 			{	test: /\.json$/, loader: 'json-loader' }
 		]
 	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin(),
+		new webpack.NoErrorsPlugin()
+	],
 	stats: {
 		colors: true
 	},
