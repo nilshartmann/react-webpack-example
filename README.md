@@ -3,6 +3,12 @@ React Webpack Example
 
 Very simple and not yet complete example on how to use webpack and react.
 
+Use case:
+---------
+Present greeting cards to user :-)
+
+![Sample Application](screenshot.png)
+
 Features shown so far:
 ----------------------
 * Require CSS files from javascript
