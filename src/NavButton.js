@@ -2,13 +2,6 @@
 
 import React from 'react';
 
-const Icons = {
-	prev: require('./styles/prev.png'),
-	next: require('./styles/next.png'),
-	prevHi: require('./styles/prev-hi.png'),
-	nextHi: require('./styles/next-hi.png')
-};
-
 // Credits for :hover handling goes to https://github.com/Sitebase/cssinjs/blob/a83c22436978f1db9a6a3898d971583bba1b0c78/interaction-aware-mixin.js
 export default class NavBar extends React.Component {
 	constructor(props) {
