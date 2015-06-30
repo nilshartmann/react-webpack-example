@@ -1,10 +1,11 @@
 "use strict";
 
+// Import styles used by our app
+import styles from './styles/styles.css';
 import React from 'react';
+
 import GreetingCard from './GreetingCard';
 import NavBar from './NavBar';
-
-
 
 export default class GreetingCardApp extends React.Component {
 	constructor(props) {
