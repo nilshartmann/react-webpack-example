@@ -3,6 +3,7 @@
 import React from 'react';
 import NavButton from './NavButton';
 
+// Use Image resources via require
 const Icons = {
 	prev: require('./styles/prev.png'),
 	next: require('./styles/next.png'),

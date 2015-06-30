@@ -1,9 +1,14 @@
 import React from 'react';
 
+// Use Image resources via ES6 'import'
+import landscape from './images/landscape.jpg';
+import flower from './images/flower.jpg';
+import sunset from './images/sunset.jpg';
+
 const IMAGES = {
-	landscape: require('./images/landscape.jpg'),
-	flower: require('./images/flower.jpg'),
-	sunset: require('./images/sunset.jpg')
+	landscape,
+	flower,
+	sunset
 };
 
 export default class CardImage extends React.Component {
