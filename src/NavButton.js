@@ -1,12 +1,4 @@
 "use strict";
-// --------------------------------------------------------------------------------------
-// ---
-// ---
-// ---
-// --------------------------------------------------------------------------------------
-// --- Copyright (c) 2015 Nils Hartmann (http://nilshartmann.net).
-// -------------------------------------------------------------------------------------
-"use strict";
 
 import React from 'react';
 
@@ -17,6 +9,7 @@ const Icons = {
 	nextHi: require('./styles/next-hi.png')
 };
 
+// Credits for :hover handling goes to https://github.com/Sitebase/cssinjs/blob/a83c22436978f1db9a6a3898d971583bba1b0c78/interaction-aware-mixin.js
 export default class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
