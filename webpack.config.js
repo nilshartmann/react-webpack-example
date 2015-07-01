@@ -25,9 +25,24 @@ module.exports = {
 	},
 	module: {
 		loaders: [
+			// JSX/ES6 handling with babel
+			// * babel-loader: uses Babel to transform your JSX/ES6 JavaScript to ECMAScript 5
+			// * react-hot: Reloads your React Component on code changes without loosing the application state
 			{	test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel']},
-			{ test: /\.css$/, loader: 'style-loader!css-loader' },
+			// CSS handling
+			// * style-loader: Embeds referenced CSS code using a <style>-element in your index.html file
+			// * css-loader: Parses the actual CSS files referenced from your code. Modifies url()-statements in your
+			//   CSS files to match images handled by url loader (see below)
+			{ test: /\.css$/, loader: 'style!css' },
+
+			// Image Handling
+			// * url-loader: Returns all referenced png/jpg files up to the specified limit as inline Data Url
+			//   or - if above that limit - copies the file to your output directory and returns the url to that copied file
+			//   Both values can be used for example for the 'src' attribute on an <img> element
 			{	test: /\.(png|jpg)$/,	loader: 'url?limit=25000'	},
+
+			// JSon file handling
+			// * Enables you to 'require'/'import' json files from your JS files
 			{	test: /\.json$/, loader: 'json-loader' }
 		]
 	},
