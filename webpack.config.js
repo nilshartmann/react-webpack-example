@@ -18,7 +18,7 @@ module.exports = {
 	output: {
 		// output path
 		path: path.resolve(__dirname, 'public/dist'),
-		publicPath: '/dist/',
+		publicPath: 'dist/',
 
 		// Name of the resulting bundle file that
 		filename: 'main.js'
