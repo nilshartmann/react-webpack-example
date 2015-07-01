@@ -19,8 +19,8 @@ export default class NavBar extends React.Component {
 	render() {
 		return (
 			<div className="NavBar">
-				<NavButton hoverImage={Icons.prevHi} image={Icons.prev} onClick={() => {this.props.onPrev(); }}/>
-				<NavButton hoverImage={Icons.nextHi} image={Icons.next} onClick={() => {this.props.onNext(); }}/>
+				<NavButton hoverImage={Icons.prevHi} image={Icons.prev} onClick={this.props.onPrev}/>
+				<NavButton hoverImage={Icons.nextHi} image={Icons.next} onClick={this.props.onNext}/>
 			</div>
 		)
 	}

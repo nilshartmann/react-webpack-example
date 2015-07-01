@@ -41,7 +41,7 @@ export default class NavBar extends React.Component {
 	render() {
 		return (
 			<img src={this.state.hovered?this.props.hoverImage:this.props.image}
-					 onClick={()=>{this.props.onClick()}}
+					 onClick={this.props.onClick}
 					 ref='image'
 				/>
 		);
