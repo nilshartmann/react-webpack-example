@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist/ public/dist/",
+    "build": "./node_modules/.bin/webpack",
     "devserver": "./node_modules/.bin/webpack-dev-server --progress --colors --hot --content-base public"
   },
   "author": "Nils Hartmann",
