@@ -6,8 +6,10 @@ import React from 'react';
 export default class NavBar extends React.Component {
 	constructor(props) {
 		super(props);
-		this.onOver = this.onOver.bind(this);
-		this.onOut = this.onOut.bind(this)
+
+		// ES7 function bind proposal (https://github.com/zenparsing/es-function-bind)
+		this.onOver = ::this.onOver;
+		this.onOut = ::this.onOut;
 
 	}
 

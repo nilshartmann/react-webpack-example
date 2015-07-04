@@ -11,8 +11,9 @@ export default class GreetingCardApp extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.prevClicked = this.prevClicked.bind(this);
-		this.nextClicked = this.nextClicked.bind(this);
+		// ES7 function bind proposal (https://github.com/zenparsing/es-function-bind)
+		this.prevClicked = ::this.prevClicked;
+		this.nextClicked = ::this.nextClicked;
 
 		this.state = {
 			cardId: 0
