@@ -1,0 +1,53 @@
+html {
+	/* This image will be displayed fullscreen */
+	background: url('./bg.jpg') no-repeat center center fixed;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height: 100%;
+
+	/* The Magic */
+	background-size: cover;
+
+	text-align: center;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+
+	margin-top: 18px;
+}
+
+.GreetingCard {
+	background-color: rgba(17, 17, 17, .7);
+	color: white;
+	text-align: center;
+	display: inline-block;
+
+	margin: 0 auto 40px auto;
+	padding: 10px 0 10px 0;
+	font-family: 'Open Sans', sans-serif;
+
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px;
+}
+
+.GreetingCardTitle {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	font-style: normal;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	padding-right: 3%;
+	text-align: center;
+}
+
+.NavBar {
+	margin-top: 5px;
+}
+
+.NavBar > img	 {
+	padding: 4px 12px 4px 12px;
+}
