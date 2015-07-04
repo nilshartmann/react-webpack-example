@@ -59,15 +59,16 @@ body {
 	width: 100%;
 }
 
-.Footer:hover {
-	cursor: pointer;
-}
-
-.Footer > a {
+.FooterInner {
+	display: inline-block;
 	text-decoration: none;
 }
 
-.Footer-FooterLine {
+.FooterInner:hover {
+	cursor: pointer;
+}
+
+.FooterInner-FooterLine {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -76,7 +77,7 @@ body {
 	color: white;
 	padding-top:5px;
 }
-.Footer-FooterLine-Selected {
+.FooterInner-FooterLine-Selected {
 	text-decoration: underline;
 	color: rgba(17, 17, 17, .7);
 	font-weight: 700;
