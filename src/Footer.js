@@ -12,21 +12,52 @@ const Icons = {
 export default class Footer extends React.Component {
 	constructor(props) {
 		super(props);
+
+		// ES7 function bind proposal (https://github.com/zenparsing/es-function-bind)
+		this.onOver = ::this.onOver;
+		this.onOut = ::this.onOut;
 	}
 
+	componentWillMount() {
+		this.state = this.state || {};
+		this.state.hovered = false;
+	}
+
+
+	componentDidMount() {
+		this.footerNode = React.findDOMNode(this.refs.footer);
+
+		this.footerNode.addEventListener("mouseover", this.onOver);
+		this.footerNode.addEventListener("mouseout", this.onOut);
+	}
+
+	componentWillUnmount() {
+		this.footerNode.removeEventListener("mouseover", this.onOver);
+		this.footerNode.removeEventListener("mouseout", this.onOut);
+	}
+
+	onOver() {
+		this.setState({ hovered: true });
+	}
+
+	onOut() {
+		this.setState({ hovered: false });
+	}
+
+
 	render() {
+
+		const footerLineClassName = this.state.hovered?'Footer-FooterLine Footer-FooterLine-Selected':'Footer-FooterLine';
+
 		return (
-			<div className="Footer">
+			<div ref="footer" className="Footer">
 				<a href="https://github.com/nilshartmann/react-webpack-example"
 					 title="Go to project GitHub page"
 					 target="_blank">
-					<NavButton
-						hoverImage={Icons.github}
-						image={Icons.githubLight} />
-					<div className="Footer-FooterLine">A React Webpack Example</div>
+					<img src={this.state.hovered?Icons.github:Icons.githubLight} />
+					<div className={footerLineClassName}>A React Webpack Example</div>
 				</a>
 				<br/>
-
 			</div>
 		)
 	}

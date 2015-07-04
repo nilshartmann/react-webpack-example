@@ -59,6 +59,10 @@ body {
 	width: 100%;
 }
 
+.Footer:hover {
+	cursor: pointer;
+}
+
 .Footer > a {
 	text-decoration: none;
 }
@@ -72,7 +76,8 @@ body {
 	color: white;
 	padding-top:5px;
 }
-
-.Footer-FooterLine:hover {
+.Footer-FooterLine-Selected {
 	text-decoration: underline;
+	color: rgba(17, 17, 17, .7);
+	font-weight: 700;
 }
