@@ -1,27 +1,30 @@
 {
-  "name": "react-webpack",
+  "name": "react-webpack-example",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist/ public/dist/",
     "build": "./node_modules/.bin/webpack",
     "devserver": "./node_modules/.bin/webpack-dev-server --progress --colors --hot --content-base public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nilshartmann/react-webpack-example.git"
+  },
   "author": "Nils Hartmann",
   "license": "ISC",
   "dependencies": {
-    "babel": "*",
-    "react": "*"
+    "babel": "^5.6.14",
+    "react": "~0.13.3"
   },
   "devDependencies": {
-    "babel-loader": "*",
+    "babel-loader": "^5.2.2",
     "css-loader": "^0.15.1",
     "json-loader": "^0.5.2",
     "react-hot-loader": "^1.2.7",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
-    "webpack": "*",
+    "webpack": "^1.10.0",
     "webpack-dev-server": "^1.10.1"
   }
 }
