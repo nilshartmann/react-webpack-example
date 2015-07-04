@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+_dist/
+dist/
+node_modules/
+*.log
+bb/
+
