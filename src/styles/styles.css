@@ -48,6 +48,31 @@ body {
 	margin-top: 5px;
 }
 
-.NavBar > img	 {
+.NavBar > img {
 	padding: 4px 12px 4px 12px;
+}
+
+.Footer {
+	position: absolute;
+	bottom: 35px;
+	text-align: center;
+	width: 100%;
+}
+
+.Footer > a {
+	text-decoration: none;
+}
+
+.Footer-FooterLine {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: white;
+	padding-top:5px;
+}
+
+.Footer-FooterLine:hover {
+	text-decoration: underline;
 }
