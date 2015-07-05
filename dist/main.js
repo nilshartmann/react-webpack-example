@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9f059592f44e4e8f444f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "15cd1154bff3079faeb6"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -20979,7 +20979,11 @@
 	
 	// Import styles used by our app
 	
-	var _stylesStylesCss = __webpack_require__(159);
+	var _normalizeCssNormalizeCss = __webpack_require__(164);
+	
+	var _normalizeCssNormalizeCss2 = _interopRequireDefault(_normalizeCssNormalizeCss);
+	
+	var _stylesStylesCss = __webpack_require__(168);
 	
 	var _stylesStylesCss2 = _interopRequireDefault(_stylesStylesCss);
 	
@@ -20987,15 +20991,15 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _GreetingCard = __webpack_require__(164);
+	var _GreetingCard = __webpack_require__(159);
 	
 	var _GreetingCard2 = _interopRequireDefault(_GreetingCard);
 	
-	var _NavBar = __webpack_require__(169);
+	var _NavBar = __webpack_require__(171);
 	
 	var _NavBar2 = _interopRequireDefault(_NavBar);
 	
-	var _Footer = __webpack_require__(175);
+	var _Footer = __webpack_require__(177);
 	
 	var _Footer2 = _interopRequireDefault(_Footer);
 	
@@ -21060,20 +21064,168 @@
 /* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _CardImage = __webpack_require__(160);
+	
+	var _CardImage2 = _interopRequireDefault(_CardImage);
+	
+	var GreetingCard = (function (_React$Component) {
+		function GreetingCard(props) {
+			_classCallCheck(this, GreetingCard);
+	
+			_get(Object.getPrototypeOf(GreetingCard.prototype), 'constructor', this).call(this, props);
+		}
+	
+		_inherits(GreetingCard, _React$Component);
+	
+		_createClass(GreetingCard, [{
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement(
+					'div',
+					null,
+					_react2['default'].createElement(
+						'h1',
+						{ className: 'GreetingCardTitle' },
+						this.props.card.message
+					),
+					_react2['default'].createElement(_CardImage2['default'], { image: this.props.card.image })
+				);
+			}
+		}]);
+	
+		return GreetingCard;
+	})(_react2['default'].Component);
+	
+	exports['default'] = GreetingCard;
+	module.exports = exports['default'];
+
+/***/ },
+/* 160 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, '__esModule', {
+		value: true
+	});
+	
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	// Use Image resources via ES6 'import'
+	
+	var _imagesLandscapeJpg = __webpack_require__(161);
+	
+	var _imagesLandscapeJpg2 = _interopRequireDefault(_imagesLandscapeJpg);
+	
+	var _imagesFlowerJpg = __webpack_require__(162);
+	
+	var _imagesFlowerJpg2 = _interopRequireDefault(_imagesFlowerJpg);
+	
+	var _imagesSunsetJpg = __webpack_require__(163);
+	
+	var _imagesSunsetJpg2 = _interopRequireDefault(_imagesSunsetJpg);
+	
+	var IMAGES = {
+		landscape: _imagesLandscapeJpg2['default'],
+		flower: _imagesFlowerJpg2['default'],
+		sunset: _imagesSunsetJpg2['default']
+	};
+	
+	var CardImage = (function (_React$Component) {
+		function CardImage(props) {
+			_classCallCheck(this, CardImage);
+	
+			_get(Object.getPrototypeOf(CardImage.prototype), 'constructor', this).call(this, props);
+		}
+	
+		_inherits(CardImage, _React$Component);
+	
+		_createClass(CardImage, [{
+			key: 'imageSrc',
+			value: function imageSrc() {
+				return IMAGES[this.props.image];
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2['default'].createElement('img', { className: 'Image', src: this.imageSrc() });
+			}
+		}]);
+	
+		return CardImage;
+	})(_react2['default'].Component);
+	
+	exports['default'] = CardImage;
+	module.exports = exports['default'];
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "91c520b5644e5d32486e708a594c5f8c.jpg"
+
+/***/ },
+/* 162 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "6295f8623603e9f5acee647d4178549e.jpg"
+
+/***/ },
+/* 163 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9f9f12d63c5cc9896d3f37865ca17be5.jpg"
+
+/***/ },
+/* 164 */
+/***/ function(module, exports, __webpack_require__) {
+
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 	
 	// load the styles
-	var content = __webpack_require__(160);
+	var content = __webpack_require__(165);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(163)(content, {});
+	var update = __webpack_require__(167)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(true) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept(160, function() {
-				var newContent = __webpack_require__(160);
+			module.hot.accept(165, function() {
+				var newContent = __webpack_require__(165);
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -21083,21 +21235,21 @@
 	}
 
 /***/ },
-/* 160 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(161)();
+	exports = module.exports = __webpack_require__(166)();
 	// imports
 	
 	
 	// module
-	exports.push([module.id, "html {\n\t/* This image will be displayed fullscreen */\n\tbackground: url(" + __webpack_require__(162) + ") no-repeat center center fixed;\n\n\t/* Ensure the html element always takes up the full height of the browser window */\n\tmin-height: 100%;\n\n\t/* The Magic */\n\tbackground-size: cover;\n\n\ttext-align: center;\n}\n\nbody {\n\tfont-family: 'PT Sans', sans-serif;\n\n\tmargin-top: 18px;\n}\n\n.GreetingCard {\n\tbackground-color: rgba(17, 17, 17, .7);\n\tcolor: white;\n\ttext-align: center;\n\tdisplay: inline-block;\n\n\tmargin: 0 auto 40px auto;\n\tpadding: 10px 0 10px 0;\n\tfont-family: 'Open Sans', sans-serif;\n\n\t-moz-border-radius: 10px;\n\t-webkit-border-radius: 10px;\n\tborder-radius: 10px; /* future proofing */\n\t-khtml-border-radius: 10px;\n}\n\n.GreetingCardTitle {\n\tfont-family: 'PT Sans', sans-serif;\n\tfont-size: 18px;\n\tfont-weight: 400;\n\tfont-style: normal;\n\ttext-transform: uppercase;\n\tletter-spacing: 4px;\n\tpadding-right: 3%;\n\ttext-align: center;\n}\n\n.NavBar {\n\tmargin-top: 5px;\n}\n\n.NavBar > img {\n\tpadding: 4px 12px 4px 12px;\n}\n\n.Footer {\n\tposition: absolute;\n\tbottom: 35px;\n\ttext-align: center;\n\twidth: 100%;\n}\n\n.FooterInner {\n\tdisplay: inline-block;\n\ttext-decoration: none;\n}\n\n.FooterInner:hover {\n\tcursor: pointer;\n}\n\n.FooterInner-FooterLine {\n\tfont-family: 'PT Sans', sans-serif;\n\tfont-size: 16px;\n\tfont-weight: 400;\n\ttext-transform: uppercase;\n\tletter-spacing: 2px;\n\tcolor: white;\n\tpadding-top:5px;\n}\n.FooterInner-FooterLine-Selected {\n\ttext-decoration: underline;\n\tcolor: rgba(17, 17, 17, .7);\n\tfont-weight: 700;\n}\n", ""]);
+	exports.push([module.id, "/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Set default font family to sans-serif.\n * 2. Prevent iOS and IE text size adjust after device orientation change,\n *    without disabling user zoom.\n */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  -ms-text-size-adjust: 100%; /* 2 */\n  -webkit-text-size-adjust: 100%; /* 2 */\n}\n\n/**\n * Remove default margin.\n */\n\nbody {\n  margin: 0;\n}\n\n/* HTML5 display definitions\n   ========================================================================== */\n\n/**\n * Correct `block` display not defined for any HTML5 element in IE 8/9.\n * Correct `block` display not defined for `details` or `summary` in IE 10/11\n * and Firefox.\n * Correct `block` display not defined for `main` in IE 11.\n */\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmain,\nmenu,\nnav,\nsection,\nsummary {\n  display: block;\n}\n\n/**\n * 1. Correct `inline-block` display not defined in IE 8/9.\n * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.\n */\n\naudio,\ncanvas,\nprogress,\nvideo {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Prevent modern browsers from displaying `audio` without controls.\n * Remove excess height in iOS 5 devices.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Address `[hidden]` styling not present in IE 8/9/10.\n * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.\n */\n\n[hidden],\ntemplate {\n  display: none;\n}\n\n/* Links\n   ========================================================================== */\n\n/**\n * Remove the gray background color from active links in IE 10.\n */\n\na {\n  background-color: transparent;\n}\n\n/**\n * Improve readability of focused elements when they are also in an\n * active/hover state.\n */\n\na:active,\na:hover {\n  outline: 0;\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * Address styling not present in IE 8/9/10/11, Safari, and Chrome.\n */\n\nabbr[title] {\n  border-bottom: 1px dotted;\n}\n\n/**\n * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.\n */\n\nb,\nstrong {\n  font-weight: bold;\n}\n\n/**\n * Address styling not present in Safari and Chrome.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Address variable `h1` font-size and margin within `section` and `article`\n * contexts in Firefox 4+, Safari, and Chrome.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/**\n * Address styling not present in IE 8/9.\n */\n\nmark {\n  background: #ff0;\n  color: #000;\n}\n\n/**\n * Address inconsistent and variable font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` affecting `line-height` in all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsup {\n  top: -0.5em;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Remove border when inside `a` element in IE 8/9/10.\n */\n\nimg {\n  border: 0;\n}\n\n/**\n * Correct overflow not hidden in IE 9/10/11.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Address margin not present in IE 8/9 and Safari.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * Address differences between Firefox and other browsers.\n */\n\nhr {\n  box-sizing: content-box;\n  height: 0;\n}\n\n/**\n * Contain overflow in all browsers.\n */\n\npre {\n  overflow: auto;\n}\n\n/**\n * Address odd `em`-unit font size rendering in all browsers.\n */\n\ncode,\nkbd,\npre,\nsamp {\n  font-family: monospace, monospace;\n  font-size: 1em;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * Known limitation: by default, Chrome and Safari on OS X allow very limited\n * styling of `select`, unless a `border` property is set.\n */\n\n/**\n * 1. Correct color not being inherited.\n *    Known issue: affects color of disabled elements.\n * 2. Correct font properties not being inherited.\n * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  color: inherit; /* 1 */\n  font: inherit; /* 2 */\n  margin: 0; /* 3 */\n}\n\n/**\n * Address `overflow` set to `hidden` in IE 8/9/10/11.\n */\n\nbutton {\n  overflow: visible;\n}\n\n/**\n * Address inconsistent `text-transform` inheritance for `button` and `select`.\n * All other form control elements do not inherit `text-transform` values.\n * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.\n * Correct `select` style inheritance in Firefox.\n */\n\nbutton,\nselect {\n  text-transform: none;\n}\n\n/**\n * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`\n *    and `video` controls.\n * 2. Correct inability to style clickable `input` types in iOS.\n * 3. Improve usability and consistency of cursor style between image-type\n *    `input` and others.\n */\n\nbutton,\nhtml input[type=\"button\"], /* 1 */\ninput[type=\"reset\"],\ninput[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n  cursor: pointer; /* 3 */\n}\n\n/**\n * Re-set default cursor for disabled elements.\n */\n\nbutton[disabled],\nhtml input[disabled] {\n  cursor: default;\n}\n\n/**\n * Remove inner padding and border in Firefox 4+.\n */\n\nbutton::-moz-focus-inner,\ninput::-moz-focus-inner {\n  border: 0;\n  padding: 0;\n}\n\n/**\n * Address Firefox 4+ setting `line-height` on `input` using `!important` in\n * the UA stylesheet.\n */\n\ninput {\n  line-height: normal;\n}\n\n/**\n * It's recommended that you don't attempt to style these elements.\n * Firefox's implementation doesn't respect box-sizing, padding, or width.\n *\n * 1. Address box sizing set to `content-box` in IE 8/9/10.\n * 2. Remove excess padding in IE 8/9/10.\n */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Fix the cursor style for Chrome's increment/decrement buttons. For certain\n * `font-size` values of the `input`, it causes the cursor style of the\n * decrement button to change from `default` to `text`.\n */\n\ninput[type=\"number\"]::-webkit-inner-spin-button,\ninput[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Address `appearance` set to `searchfield` in Safari and Chrome.\n * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.\n */\n\ninput[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  box-sizing: content-box; /* 2 */\n}\n\n/**\n * Remove inner padding and search cancel button in Safari and Chrome on OS X.\n * Safari (but not Chrome) clips the cancel button when the search input has\n * padding (and `textfield` appearance).\n */\n\ninput[type=\"search\"]::-webkit-search-cancel-button,\ninput[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * Define consistent border, margin, and padding.\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct `color` not being inherited in IE 8/9/10/11.\n * 2. Remove padding so people aren't caught out if they zero out fieldsets.\n */\n\nlegend {\n  border: 0; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Remove default vertical scrollbar in IE 8/9/10/11.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * Don't inherit the `font-weight` (applied by a rule above).\n * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.\n */\n\noptgroup {\n  font-weight: bold;\n}\n\n/* Tables\n   ========================================================================== */\n\n/**\n * Remove most spacing between table cells.\n */\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\ntd,\nth {\n  padding: 0;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
-/* 161 */
+/* 166 */
 /***/ function(module, exports) {
 
 	/*
@@ -21153,13 +21305,7 @@
 
 
 /***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "c9d8727d52a30ebe8ca2b27dbc93a9c4.jpg"
-
-/***/ },
-/* 163 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -21384,157 +21530,55 @@
 
 
 /***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-		value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _CardImage = __webpack_require__(165);
-	
-	var _CardImage2 = _interopRequireDefault(_CardImage);
-	
-	var GreetingCard = (function (_React$Component) {
-		function GreetingCard(props) {
-			_classCallCheck(this, GreetingCard);
-	
-			_get(Object.getPrototypeOf(GreetingCard.prototype), 'constructor', this).call(this, props);
-		}
-	
-		_inherits(GreetingCard, _React$Component);
-	
-		_createClass(GreetingCard, [{
-			key: 'render',
-			value: function render() {
-				return _react2['default'].createElement(
-					'div',
-					null,
-					_react2['default'].createElement(
-						'h1',
-						{ className: 'GreetingCardTitle' },
-						this.props.card.message
-					),
-					_react2['default'].createElement(_CardImage2['default'], { image: this.props.card.image })
-				);
-			}
-		}]);
-	
-		return GreetingCard;
-	})(_react2['default'].Component);
-	
-	exports['default'] = GreetingCard;
-	module.exports = exports['default'];
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, '__esModule', {
-		value: true
-	});
-	
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-	
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-	
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
-	
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	// Use Image resources via ES6 'import'
-	
-	var _imagesLandscapeJpg = __webpack_require__(166);
-	
-	var _imagesLandscapeJpg2 = _interopRequireDefault(_imagesLandscapeJpg);
-	
-	var _imagesFlowerJpg = __webpack_require__(167);
-	
-	var _imagesFlowerJpg2 = _interopRequireDefault(_imagesFlowerJpg);
-	
-	var _imagesSunsetJpg = __webpack_require__(168);
-	
-	var _imagesSunsetJpg2 = _interopRequireDefault(_imagesSunsetJpg);
-	
-	var IMAGES = {
-		landscape: _imagesLandscapeJpg2['default'],
-		flower: _imagesFlowerJpg2['default'],
-		sunset: _imagesSunsetJpg2['default']
-	};
-	
-	var CardImage = (function (_React$Component) {
-		function CardImage(props) {
-			_classCallCheck(this, CardImage);
-	
-			_get(Object.getPrototypeOf(CardImage.prototype), 'constructor', this).call(this, props);
-		}
-	
-		_inherits(CardImage, _React$Component);
-	
-		_createClass(CardImage, [{
-			key: 'imageSrc',
-			value: function imageSrc() {
-				return IMAGES[this.props.image];
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				return _react2['default'].createElement('img', { className: 'Image', src: this.imageSrc() });
-			}
-		}]);
-	
-		return CardImage;
-	})(_react2['default'].Component);
-	
-	exports['default'] = CardImage;
-	module.exports = exports['default'];
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "91c520b5644e5d32486e708a594c5f8c.jpg"
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "6295f8623603e9f5acee647d4178549e.jpg"
-
-/***/ },
 /* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "9f9f12d63c5cc9896d3f37865ca17be5.jpg"
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(169);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(167)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(true) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept(169, function() {
+				var newContent = __webpack_require__(169);
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
 
 /***/ },
 /* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
+	exports = module.exports = __webpack_require__(166)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "html {\n\t/* This image will be displayed fullscreen */\n\tbackground: url(" + __webpack_require__(170) + ") no-repeat center center fixed;\n\n\t/* Ensure the html element always takes up the full height of the browser window */\n\tmin-height: 100%;\n\n\t/* The Magic */\n\tbackground-size: cover;\n\n\ttext-align: center;\n}\n\nbody {\n\tfont-family: 'PT Sans', sans-serif;\n\n\tmargin-top: 18px;\n}\n\n.GreetingCard {\n\tbackground-color: rgba(17, 17, 17, .7);\n\tcolor: white;\n\ttext-align: center;\n\tdisplay: inline-block;\n\n\tmargin: 0 auto 40px auto;\n\tpadding: 10px 0 10px 0;\n\tfont-family: 'Open Sans', sans-serif;\n\n\t-moz-border-radius: 10px;\n\t-webkit-border-radius: 10px;\n\tborder-radius: 10px; /* future proofing */\n\t-khtml-border-radius: 10px;\n}\n\n.GreetingCardTitle {\n\tfont-family: 'PT Sans', sans-serif;\n\tfont-size: 18px;\n\tfont-weight: 400;\n\tfont-style: normal;\n\ttext-transform: uppercase;\n\tletter-spacing: 4px;\n\tpadding-right: 3%;\n\ttext-align: center;\n}\n\n.NavBar {\n\tmargin-top: 5px;\n}\n\n.NavBar > img {\n\tpadding: 4px 12px 4px 12px;\n}\n\n.Footer {\n\tposition: absolute;\n\tbottom: 35px;\n\ttext-align: center;\n\twidth: 100%;\n}\n\n.FooterInner {\n\tdisplay: inline-block;\n\ttext-decoration: none;\n}\n\n.FooterInner:hover {\n\tcursor: pointer;\n}\n\n.FooterInner-FooterLine {\n\tfont-family: 'PT Sans', sans-serif;\n\tfont-size: 16px;\n\tfont-weight: 400;\n\ttext-transform: uppercase;\n\tletter-spacing: 2px;\n\tcolor: white;\n\tpadding-top:5px;\n}\n.FooterInner-FooterLine-Selected {\n\ttext-decoration: underline;\n\tcolor: rgba(17, 17, 17, .7);\n\tfont-weight: 700;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 170 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c9d8727d52a30ebe8ca2b27dbc93a9c4.jpg"
+
+/***/ },
+/* 171 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 	
 	Object.defineProperty(exports, '__esModule', {
@@ -21555,16 +21599,16 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _NavButton = __webpack_require__(171);
+	var _NavButton = __webpack_require__(173);
 	
 	var _NavButton2 = _interopRequireDefault(_NavButton);
 	
 	// Use Image resources via require
 	var Icons = {
-		prev: __webpack_require__(172),
-		next: __webpack_require__(170),
-		prevHi: __webpack_require__(173),
-		nextHi: __webpack_require__(174)
+		prev: __webpack_require__(174),
+		next: __webpack_require__(172),
+		prevHi: __webpack_require__(175),
+		nextHi: __webpack_require__(176)
 	};
 	
 	var NavBar = (function (_React$Component) {
@@ -21595,13 +21639,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAtCAYAAAAtOHJTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQ9JREFUeNrM2c0NwjAMBeDU4tQTIzACI8AIbMAmjMQIXYFN4JQruJU4oNK/5Nl+lqJcoupTXDdWkxIgcs7HxBqKe9ICFfa2AArwWXsdHRIo4E2EAsUgyzCgGL2GEKAY1kk1UIwLuQpojasCeuCKgV64IqAnbjNwpwuvOh8CgOe2bR9zCxtd1Ol8CjiSXzpmgZLiYjHFkbhFYDRuFsiAmwSy4P4CmXAjIBvuB8iI+wLvrLj+A30RUthwcggrjK0gRmetsMJYcJPdibDConGL/VwD6oRvaNiAQ2xB/5cJDYtI62qYN24TzBO3GeaFK4J54Iph1rgqmCWuGmaFg8AscDAYLKzuIVA46hscE9hHgAEAXXap4wk+WYUAAAAASUVORK5CYII="
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -21689,25 +21733,25 @@
 	module.exports = exports["default"];
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAtCAYAAAAtOHJTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQpJREFUeNrU2csNgzAQBFDC0aeUkBLSAiVRSVpIJ0kJaSEdcPI5CxIoFqBg7856Ymnlm/VkC3+GpgG0GONZ6qIdp0XApHtIceG+YFeL8VpWmBkOATPBoWBqHBKmwqFhxTgPWBHOC5aN84Rl4bxhh3E1YGM7AWF3qTcMV2vGfi5rbdgujgG2iWOBrXBMsATHBltwjLAJxwqbZ+7GCJtxvdSLEhdCGKTvGIHTB8EKXLYSRmCyCbMBV8cXE3Dz4GcB7l6ZGID/exNWAjuZ/Sf8gVNriQ8/DWsAsx7V3sDsOMITWBTkeAGLIzAPoCo8RAPVsSsSaBJYo4BmUT8CaPqThPnKn5zFFv++PgIMAGwOkbFWoYKSAAAAAElFTkSuQmCC"
 
 /***/ },
-/* 173 */
+/* 175 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAtCAYAAAAtOHJTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQxJREFUeNrU2c0NgkAQBWCkAkuwBE9ypiQrsQU70SueLEE7sARHEggECOzOvJnnJpO9bb7shv15FAWgVdVpL3XQjlMiYNLdpLhwA9jRYrySFWaGQ8BMcCiYGoeEqXBoWDbOA5aF84Il4zxhSThv2GZcBOzXdkDYVeoNw0XN2OqyRsMWcQywWRwLbIJjgo1wbLAexwhrcaywbuYujLAOd5Z6UuKa5vGRvmYEth8EK7DfShiBo02YDTg5vpiAswc/C3DxysQA/N+bsBJYy+zf4Q+cqCXe/DSMACY9qr2ByXGEJzAryPECZkdgHkBVeIgGqmNXJNAksEYBzaJ+BND0J4k10Pz30gD40o71FWAA05yCuEcXLQ0AAAAASUVORK5CYII="
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAtCAYAAAAtOHJTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQ1JREFUeNrM2cENwjAMBdBgMQAjMAIneoUR2IBNmIUJGKHiWE6MwgYQkDigUkKS/51vycolSp/qtrbUEADRdetVIISBzukZQBRuwQAa8Cw40MCVgAKN8BzDgAwcDMjCQYBMXDWQjasCeuCKgV64IqAnLhs4ixv3cV1WXvSQuf8WczsMl2sK18d1E/wjCbTQLpIlbolLAlvjfgIVcJNAFdxXoBJuBFTDfQAVcW/gSRX3/EDvTBT26hymClN7IUa91lRhKrjJ6cRUYa1xyXluHvMY8yw5CSNuQWw1dzSsRVn/hnnjsmCeuGyYF64I5oErhrFxVTAmrhrGwkFgDBwMhsZBYUgcHAYL1r+vhwADAImAic8Q4rULAAAAAElFTkSuQmCC"
 
 /***/ },
-/* 175 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -21730,14 +21774,14 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _NavButton = __webpack_require__(171);
+	var _NavButton = __webpack_require__(173);
 	
 	var _NavButton2 = _interopRequireDefault(_NavButton);
 	
 	// Use Image resources via require
 	var Icons = {
-		github: __webpack_require__(176),
-		githubLight: __webpack_require__(177)
+		github: __webpack_require__(178),
+		githubLight: __webpack_require__(179)
 	};
 	
 	var Footer = (function (_React$Component) {
@@ -21814,13 +21858,13 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 176 */
+/* 178 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpFNTE3OEEyRTk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpFNTE3OEEyRjk5QTAxMUUyOUExNUJDMTA0NkE4OTA0RCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTJDOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1MTc4QTJEOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+FYrpWAAABrNJREFUeNrkW2ls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"
 
 /***/ },
-/* 177 */
+/* 179 */
 /***/ function(module, exports) {
 
 	module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzlFQkFERkU4NkJCMTFFM0FBNTJFRTMzNTJEMUJDNDYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzlFQkFERkQ4NkJCMTFFM0FBNTJFRTMzNTJEMUJDNDYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MTc4QTJFOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkU1MTc4QTJGOTlBMDExRTI5QTE1QkMxMDQ2QTg5MDREIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Kk5lQwAABYxJREFUeNrkm29oVXUYx3+7bM3V1FnbqlltrtXWtYRa1nqxooY5E7EhKWGuaTDBagol9SIMDCKICASj+cISw/DPi16ZBakrUBnoC7nNoTMWy6I1c+LmVq6t78N9jpyu555znt855+536IHPi939/jzP95zznN+/kzc1NaUitirwJJgPasF94DZQDG7hMqNgBFwEZ5kU+AH0R+lcXgQCJMBT4EXwLKgM2N7P4FvwJegCk6YKUA5eB23grogu2C/gc7AN/GGKABTsZtAOZqjc2DjYAT5kUfSNBNCkAGwGo1PTZ6PsQ4FuHLp3QD3YDR5QZtgZsAac1ElYokcGbATHDApesS/kUwf7GEkOKAK7wAvKbNsPXgZjYQowG3wNnlDxsONgCbgchgAU/GHwiIqXUT5o8hLBKwfcDA7FMHgrUR/iGLQEoGTyBWhQ8bUGjiFPR4A3QIuKv7VwLKIcQMnue5Dv0fjT/IwtAM3g+RyMBmkU+BXf3qc5Rx3xqDPBE7LjfkaCheCcj1HYKYe6JeBt8GcEo75L3HaJQ7+nfNQ/x7H9p67TFX4L1Pi4EocdfhsGH4BPwVbwqu0xGwI/8vT2N/77Gv+vAJSCO3n6PJ//Vjz72w62cPtORnfAwx7+1nBsW93ugGow7vOKtPkYa9eDl0Clxji9kuvW+yjb5tPncY7xet3MhjoFt2RzgIlU2DQL/O6017W/Be4BawXJqMCgTH+ToOxajvWG1+AmYVBlBglQKrxwmzIFoB9XCzt91CABpL6sti62JcBiXtKS2GMGCSD1pZxjvi7AKmED9PraYJAAG2yvVL+2yi7AImHl90C3QQJ03/B+97ZF1lCYVlN6BBV/BffykNQkoyF4H5grqJOkO6BR2NF2A4O35gifCOs0JjTW9vYaPPPbJ11LJAFqBRVoDf68wQLQI3BBUL424XPiY1lvDOb/ZwRla0iAOYIKv8dAgEFB2VtJgJmCChMxEEAyHigmAQoFFWbFQIDZgrKF0p2hmTEQQOQjCTAmKD8vBgJUCcqOkQBXBBXosEORwcEXKdmBjCskwICgQr5h0+BMW6i8V7LtNkAC9As7WWqwAM8Jy/cnhBMhspVKvq2eC0uwbxLrSWhMa+dpdJQLW6mRpLtpOlyuMcL7CTwErhoSPG2ApjQEuD3BQ0fp0ZJqlT6pZYpt0wieYh60nuWDGp2+At4xIPgt7IvU0jHzBkFdgD27HWDGNGyGFHHfulaXuTN0IkBjZ8EykJeDwKmPFtAXwN8TTltjrVkKfwcawXJW3G3v8DTYCKoiCLwGvAl6QthpbnU6J5jP2f1uh1Wgxbbxwv0qvT/vtZRGA6wuzs50+Pkb8JdgQtPMq1VJld7bnxtSzhjgJD5hzwEW611OZK6xlSvzeYbAsl3Cx4PK7ozodOl6t93hfJByqbzOVnYh+MdHhxfBLI1bnuoMhRx8imPMKgDR5LG/nrSVfddHpx8HeO4/ClmApsw+snXsdk7gYMat+r5Hp0sDCLAkxOA7nfrI1nGxx2tmQUb5x8FuzgvD4Dw4wNm2MIAA1SEF38cx+RaAeBCMZGlwb44GOyUhBD/CsTj24TatpddXq3L+RIVmXnE4QzjJMaSylvBxFdqzKHsVrDD8Dmj36sOvIx0unewHDRENg4MI0BH2FyP0RcZOlzW3Ib7VLvPqDK0z1PEq7bDmLVwCLgnr0AhvnUp/0eJp0k9m6HO4fUp2nGZODgUY5PzUJVlHkxg1TEfnjxqY8I6yb12SSjqLm7T9/Ax4TaW/+JxuIx862KcL4toBk1QFT1omXZLRHQHaL3Npl/r8jH3QjiGsbJ3kGd/fDo6WBWi31KG9a9xXMgzfw35tVfCR9l52dk8Ibe7htnq57YowfY7i4+lYWUL9z+1fAQYACqstE4NCc18AAAAASUVORK5CYII="
