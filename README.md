@@ -8,6 +8,8 @@ Present greeting cards to user :-)
 
 ![Sample Application](screenshot2.png)
 
+You can find a running example of the app's latest version here: http://nilshartmann.github.io/react-webpack-example/
+
 Features shown so far:
 ----------------------
 * Require CSS files from javascript
