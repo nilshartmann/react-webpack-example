@@ -25,5 +25,9 @@ Run:
 * Point your browser to ```http://localhost:8080``` and enjoy greeting cards :-)
 * Change some CSS or JavaScript files and see modifications on the fly. No reloading is necessary. React state will be preserved during reloads.
 
+Blog post
+---------
+This example application is part of a (german) blog post, that I've written about React and Webpack. You can find
+the blog post on the german React community site [reactjs.de](http://reactjs.de): http://reactjs.de/posts/react-anwendungen-mit-webpack-entwickeln
 
 
