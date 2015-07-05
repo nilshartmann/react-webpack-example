@@ -1,6 +1,7 @@
 "use strict";
 
 // Import styles used by our app
+import normalize from 'normalize.css/normalize.css';
 import styles from './styles/styles.css';
 import React from 'react';
 
